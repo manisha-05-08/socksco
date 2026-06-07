@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://socksco.vercel.app',
+    'https://socksco.vercel.app/',
   ]
 }));
 app.use(express.json());
