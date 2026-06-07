@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream font-body text-espresso;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-sand;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-stone rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-espresso text-cream px-6 py-3 font-body font-medium text-sm tracking-wide transition-all duration-200 hover:bg-clay active:scale-95 rounded-none;
+  }
+
+  .btn-secondary {
+    @apply border border-espresso text-espresso px-6 py-3 font-body font-medium text-sm tracking-wide transition-all duration-200 hover:bg-espresso hover:text-cream active:scale-95 rounded-none;
+  }
+
+  .product-card {
+    @apply bg-white cursor-pointer transition-all duration-300 hover:shadow-lg;
+  }
+
+  .badge {
+    @apply text-xs font-body font-medium tracking-widest uppercase px-2 py-1;
+  }
+
+  .input-field {
+    @apply w-full border border-sand px-4 py-3 font-body text-sm focus:outline-none focus:border-espresso transition-colors bg-white;
+  }
+
+  .section-label {
+    @apply text-xs font-body font-medium tracking-[0.2em] uppercase text-clay mb-2;
+  }
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.opacity-0-init {
+  opacity: 0;
+}
